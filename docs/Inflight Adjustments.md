@@ -197,12 +197,12 @@ adjrange 0 0 3 900 2100 4 3 0 0
 explained:
 
 * configure adjrange 0 so that when aux4
-(3) in the range 900-2100 then use adjustment 4 (pitch/roll rate) when aux 4 (3)
+(3) in the range 900-2100 then use adjustment 8 (Pitch RC Rate) when aux 4 (3)
 is in the appropriate position. 
 * note that Center/Scale values are both zero, so this range will use increment/decrement mode.
 
 
-### Example 2 - 2 Position switch used to enable adjustment of RC rate via a 3 position switch
+### Example 2 - 2 Position switch used to enable adjustment of Pitch RC Rate via a 3 position switch
 
 ```
 adjrange 1 0 0 900 1700 0 2 0 0
@@ -214,12 +214,12 @@ explained:
 (0) in the range 900-1700 then do nothing (0) when aux 3 (2) is in any
 position.
 * configure adjrange 2 so that when aux1
-(0) in the range 1700-2100 then use adjustment rc rate (1) when aux 3
-(2) is in the appropriate position.
+(0) in the range 1700-2100 then use adjustment Pitch RC Rate (8) when aux 3
+(2) is in the appropriate position..
 * note that Center/Scale values are both zero, so this range will use increment/decrement mode.
 
 Without the entire range of aux1 being defined there is nothing that
-would stop aux 3 adjusting the pitch/roll rate once aux 1 wasn't in the higher
+would stop aux 3 adjusting the Pitch RC Rate once aux 1 wasn't in the higher
 range.
 
 ### Example 3 - 6 Position switch used to select PID tuning adjustments via a 3 position switch
@@ -236,22 +236,22 @@ adjrange 8 0 1 1850 2100 11 3 0 0
 explained:
 
 * configure adjrange 3 so that when aux2
-(1) in the range 900-1150 then use adjustment Pitch/Roll P (6) when aux 4
+(1) in the range 900-1150 then use adjustment Pitch P (14) when aux 4
 (3) is in the appropriate position.
 * configure adjrange 4 so that when aux2
-(1) in the range 1150-1300 then use adjustment Pitch/Roll I (7) when aux 4
+(1) in the range 1150-1300 then use adjustment Pitch I (15) when aux 4
 (3) is in the appropriate position.
 * configure adjrange 5 so that when aux2
-(1) in the range 1300-1500 then use adjustment Pitch/Roll D (8) when aux 4
+(1) in the range 1300-1500 then use adjustment Pitch D (16) when aux 4
 (3) is in the appropriate position.
 * configure adjrange 6 so that when aux2
-(1) in the range 1500-1700 then use adjustment Yaw P (9) when aux 4
+(1) in the range 1500-1700 then use adjustment Yaw P (22) when aux 4
 (3) is in the appropriate position.
 * configure adjrange 7 so that when aux2
-(1) in the range 1700-1850 then use adjustment Yaw I (10) when aux 4
+(1) in the range 1700-1850 then use adjustment Yaw I (23) when aux 4
 (3) is in the appropriate position.
 * configure adjrange 8 so that when aux2
-(1) in the range 1850-2100 then use adjustment Yaw D (11) when aux 4
+(1) in the range 1850-2100 then use adjustment Yaw D (24) when aux 4
 (3) is in the appropriate position.
 * note that Center/Scale values are both zero, so this range will use increment/decrement mode.
 
@@ -283,7 +283,7 @@ explained:
 
 * note that Center value is non-zero, so this range will use absolute mode.
 * configure adjrange 0 so that when aux5 (3) in the range 1450-1550 then use aux 1 (0) to adjust Roll P Adjustment (18) such that the value will be 40 with the pot centered and 30/50 at min/max.
-* configure adjrange 1 so that when aux5 (3) in the range 1450-1550 then use aux 2 (0) to adjust Pitch P Adjustment (15) such that the value will be 58 with the pot centered and 38/78 at min/max.
+* configure adjrange 1 so that when aux5 (3) in the range 1450-1550 then use aux 2 (0) to adjust Pitch P Adjustment (14) such that the value will be 58 with the pot centered and 38/78 at min/max.
 
 ### Example 6 - Use a single switch to enable absolute setting of Roll/Pitch P/I/D terms from three pots, selected using a single switch
 
