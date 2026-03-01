@@ -188,7 +188,7 @@ The adjustment is made when the adjustment channel is in the high or low positio
 
 ## Examples
 
-### Example 1 - 3 Position switch used to adjust pitch/roll rate
+### Example 1 - 3 Position switch used to adjust Pitch RC Rate
 
 ```
 adjrange 0 0 3 900 2100 4 3 0 0
@@ -264,7 +264,7 @@ adjrange 11 0 3 900 2100 12 3 0 0
 explained:
 
 * configure adjrange 11 so that when aux4
-(3) in the range 900-2100 then use adjustment Rate Profile (12) when aux 4
+(3) in the range 900-2100 then use adjustment Rate Profile (1) when aux 4
 (3) is in the appropriate position.
 * note that Center/Scale values are both zero, so this range will use increment/decrement mode.
 
